@@ -1,0 +1,260 @@
+/* main css styling */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body{
+    width: 80%;
+    margin: 0 auto;
+    clear:both;
+    padding: 10px;
+}
+
+.btn{
+    padding: 14px 50px !important;
+    background-color: #fff;
+    outline: none;
+    color: #1149f3;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:#cc2B5E!important;
+   background-color: rgb(231, 222, 222) !important;
+    /* background-color: #cc2B5E !important; */
+    transition: .3s ease-out;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.body{
+    background-image:linear-gradient(to top right,  #1149f3, #cc2B5E);
+    height: 100vh;
+} 
+
+/* head title styling */
+.headTitle{
+    text-transform:capitalize;
+    padding: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.headTitle a{
+    text-decoration: none;
+    font-size: 35px;
+    font-weight:  bold;
+    line-height: 50px;
+    color: #fff;
+}
+
+/* end of title styling */
+
+
+/* start of hero page */
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroLeft{
+    flex:1;
+    padding: 30px 30px;
+    
+}
+
+.heroRight{
+    padding: 30px 30px;  
+}
+
+.hero-img{
+    width: 430px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.heroRight h2{
+    font-size: 35px;
+    font-weight:  bold;
+    line-height: 50px;
+    text-transform: capitalize;
+    color:#fff ;
+    z-index: 1000 !important;
+}
+
+
+.heroRight p{
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 30px 0 !important;
+    color: #fff;
+    letter-spacing: inherit;
+    z-index: 1000;
+
+}
+
+/* end of hero page */
+
+
+  /* animation settings */
+  .div{
+    height: 30px !important;
+    width: 30px !important;
+    /* background-color:#cc2B5E; */
+    background-color:  #cc2B5E;
+    top: 30%;
+    transform: rotate(45deg) !important;
+    right: 10%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    position: absolute !important;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.div1{
+    height: 20px !important;
+    width: 20px !important;
+    /* background-color:#cc2B5E; */
+    background-color:  #cc2B5E;
+    top: 80%;
+    transform: rotate(45deg) !important;
+    right: 80%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    position: absolute !important;
+    animation-name: example2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.div2{
+    height: 20px !important;
+    width: 20px !important;
+    /* background-color:#cc2B5E; */
+    background-color:  #cc2B5E;
+    top: 80%;
+    transform: rotate(45deg) !important;
+    right: 80%;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    position: absolute !important;
+    animation-name: example3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes example {
+    0%   {background-color:red; right:10%; top:10%;}
+    25%  {background-color:yellow; right:30%; top:10%;}
+    50%  {background-color:blue;  right:30%; top:30%;}
+    75%  {background-color:green;  right:10%; top:30%;}
+    100% {background-color:red;  right:10%; top:10%;}
+  }
+
+  @keyframes example2 {
+    0%   {background-color:red; right:10%; top:10%;}
+    25%  {background-color:yellow; right:80%; top:10%;}
+    50%  {background-color:blue;  right:80%; top:80%;}
+    75%  {background-color:green;  right:10%; top:80%;}
+    100% {background-color:red;  right:10%; top:10%;}
+  }
+
+  @keyframes example3 {
+    0%   {background-color:red; left:10%; top:10%;}
+    25%  {background-color:yellow; left:80%; top:10%;}
+    50%  {background-color:blue;  left:80%; top:80%;}
+    75%  {background-color:green;  left:10%; top:80%;}
+    100% {background-color:red;  left:10%; top:10%;}
+  }
+/* end of animation settings */
+
+
+/* start of footer page */
+
+footer{
+    margin-left:50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center !important;
+    margin-bottom: 40px !important;
+}
+
+footer a{
+    color: aqua;
+    
+}
+
+footer p{
+    color: #fff;
+    flex:1;
+}
+
+span{
+    text-transform: capitalize;
+}
+
+
+/* this is the icon formatting */
+.icon{
+    justify-content: right;
+    margin-bottom: 40px !important;
+       }
+
+    .fa{
+        background-color: transparent;
+        color: white;
+        border-radius: 100%;
+        border: 1px solid white !important;
+        padding: 10px;
+        margin: 0 8px;
+        }
+
+        .fa-facebook{
+         padding: 10px 13px !important;
+         }
+        
+
+    @media (max-width:600px){
+
+        .hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center !important;
+        }
+
+        .icon{
+         margin-bottom: 40px !important;
+               }
+
+               .body{
+                background-image:linear-gradient(to top,  #25285d, #14275f);
+                height: 100vh;
+            } 
+
+
+    }
+ /* end of the icon formatting */
+  /* end of footer */
+
+
+
